@@ -13,7 +13,7 @@
 <h1>Interface RedisCacheOpts</h1></div>
 <div class="tsd-signature"><span class="tsd-signature-keyword">interface</span> <span class="tsd-kind-interface">RedisCacheOpts</span> <span class="tsd-signature-symbol">{</span><br/>    <a class="tsd-kind-property" href="#client">client</a><span class="tsd-signature-symbol">:</span> <a href="types.RedisLikeClient.html" class="tsd-signature-type tsd-kind-interface">RedisLikeClient</a><span class="tsd-signature-symbol">;</span><br/>    <a class="tsd-kind-property" href="#exclude">exclude</a><span class="tsd-signature-symbol">?:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">;</span><br/>    <a class="tsd-kind-property" href="#include">include</a><span class="tsd-signature-symbol">?:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">;</span><br/>    <a class="tsd-kind-property" href="#maxkeylength">maxKeyLength</a><span class="tsd-signature-symbol">?:</span> <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">;</span><br/>    <a class="tsd-kind-property" href="#prefix">prefix</a><span class="tsd-signature-symbol">?:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">;</span><br/>    <a class="tsd-kind-property" href="#ttl">ttl</a><span class="tsd-signature-symbol">?:</span> <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">;</span><br/><span class="tsd-signature-symbol">}</span></div><aside class="tsd-sources">
 <ul>
-<li>Defined in types.ts:16</li></ul></aside>
+<li>Defined in types.ts:21</li></ul></aside>
 <section class="tsd-panel-group tsd-index-group">
 <section class="tsd-panel tsd-index-panel">
 <details class="tsd-index-content tsd-accordion" open><summary class="tsd-accordion-summary tsd-index-summary"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><use href="../assets/icons.svg#icon-chevronDown"></use></svg>
@@ -37,42 +37,42 @@
 <div class="tsd-comment tsd-typography"><p>Redis client instance (ioredis or bun:redis)</p>
 </div><aside class="tsd-sources">
 <ul>
-<li>Defined in types.ts:18</li></ul></aside></section>
+<li>Defined in types.ts:23</li></ul></aside></section>
 <section class="tsd-panel tsd-member">
 <h3 class="tsd-anchor-link" id="exclude"><code class="tsd-tag">Optional</code><span>exclude</span><a href="#exclude" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3>
 <div class="tsd-signature"><span class="tsd-kind-property">exclude</span><span class="tsd-signature-symbol">?:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span></div>
 <div class="tsd-comment tsd-typography"><p>Collections excluded from caching</p>
 </div><aside class="tsd-sources">
 <ul>
-<li>Defined in types.ts:24</li></ul></aside></section>
+<li>Defined in types.ts:29</li></ul></aside></section>
 <section class="tsd-panel tsd-member">
 <h3 class="tsd-anchor-link" id="include"><code class="tsd-tag">Optional</code><span>include</span><a href="#include" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3>
 <div class="tsd-signature"><span class="tsd-kind-property">include</span><span class="tsd-signature-symbol">?:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span></div>
 <div class="tsd-comment tsd-typography"><p>If set, only these collections are cached</p>
 </div><aside class="tsd-sources">
 <ul>
-<li>Defined in types.ts:26</li></ul></aside></section>
+<li>Defined in types.ts:31</li></ul></aside></section>
 <section class="tsd-panel tsd-member">
 <h3 class="tsd-anchor-link" id="maxkeylength"><code class="tsd-tag">Optional</code><span>max<wbr/>Key<wbr/>Length</span><a href="#maxkeylength" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3>
 <div class="tsd-signature"><span class="tsd-kind-property">maxKeyLength</span><span class="tsd-signature-symbol">?:</span> <span class="tsd-signature-type">number</span></div>
 <div class="tsd-comment tsd-typography"><p>Max key length before hashing. Default: 200</p>
 </div><aside class="tsd-sources">
 <ul>
-<li>Defined in types.ts:28</li></ul></aside></section>
+<li>Defined in types.ts:33</li></ul></aside></section>
 <section class="tsd-panel tsd-member">
 <h3 class="tsd-anchor-link" id="prefix"><code class="tsd-tag">Optional</code><span>prefix</span><a href="#prefix" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3>
 <div class="tsd-signature"><span class="tsd-kind-property">prefix</span><span class="tsd-signature-symbol">?:</span> <span class="tsd-signature-type">string</span></div>
 <div class="tsd-comment tsd-typography"><p>Key prefix. Default: &quot;valthera&quot;</p>
 </div><aside class="tsd-sources">
 <ul>
-<li>Defined in types.ts:22</li></ul></aside></section>
+<li>Defined in types.ts:27</li></ul></aside></section>
 <section class="tsd-panel tsd-member">
 <h3 class="tsd-anchor-link" id="ttl"><code class="tsd-tag">Optional</code><span>ttl</span><a href="#ttl" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3>
 <div class="tsd-signature"><span class="tsd-kind-property">ttl</span><span class="tsd-signature-symbol">?:</span> <span class="tsd-signature-type">number</span></div>
 <div class="tsd-comment tsd-typography"><p>Cache TTL in seconds. Default: 60</p>
 </div><aside class="tsd-sources">
 <ul>
-<li>Defined in types.ts:20</li></ul></aside></section></section></details></div>
+<li>Defined in types.ts:25</li></ul></aside></section></section></details></div>
 <div class="col-sidebar">
 <div class="page-menu">
 <div class="tsd-navigation settings">
